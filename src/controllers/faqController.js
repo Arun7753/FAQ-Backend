@@ -1,5 +1,5 @@
 const FAQ = require('../models/FAQ');
-const translateText = require('../utils/translate'); // Correct import
+const translateText = require('../utils/translate'); 
 
 const getFAQs = async (req, res) => {
     const lang = req.query.lang || 'en';

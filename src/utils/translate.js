@@ -1,3 +1,4 @@
+
 const translateText = async (text, lang) => {
     const subscriptionKey = process.env.API_KEY;
     const endpoint = 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0';

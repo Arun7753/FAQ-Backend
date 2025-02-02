@@ -24,9 +24,9 @@ const app = express();
 app.use(express.json());
 
 // Use FAQ routes
-app.use('/faqs', faqRoutes);
+app.use('/api/faqs', faqRoutes);
 
 connectDB().then(() => {
-    const PORT = process.env.PORT || 8585;
+    const PORT = process.env.PORT || 8000;
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
